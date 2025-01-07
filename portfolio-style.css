@@ -1,0 +1,52 @@
+
+.project{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.first{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.portfolio-title{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: normal;
+    
+}
+
+.portfolio-description{
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    
+}
+
+img{
+    width: 80%;
+   height: auto;
+}
+
+a.no-underline {
+    text-decoration: none;
+    color: #199af6d2;
+}
+
+a.no-underline:hover {
+    color: #97cdef;
+}
+
+.note{
+    color: rgb(227, 70, 70);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: left;
+}
+    
+    
+
