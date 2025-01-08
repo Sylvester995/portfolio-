@@ -100,10 +100,32 @@
     <script>
         // JavaScript to handle form submission and clear fields
         const form = document.getElementById('myForm');
-        form.addEventListener('submit', (e) => {  
-            form.reset();
-        });
-           
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Example of submitting data to the third party
+      try {
+        const formData = new FormData(form);
+        await submitToThirdParty(formData); // Assume this function handles the submission
+        alert('Form submitted successfully!');
+        form.reset(); // Clear form fields only after successful submission
+      } catch (error) {
+        console.error('Submission failed:', error);
+        alert('There was an error submitting the form. Please try again.');
+      }
+    });
+
+    // Mock function to simulate third-party submission
+    async function submitToThirdParty(formData) {
+      // Simulating an API call
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          // Simulate successful submission
+          resolve('Success');
+        }, 1000); // 1-second delay for demo purposes
+      });
+    }
     
       </script>
 
