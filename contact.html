@@ -100,7 +100,10 @@
     <script>
         // JavaScript to handle form submission and clear fields
         const form = document.getElementById('myForm');
-          form.reset(); // Clear all form fields
+        form.addEventListener('submit', (e) => {  
+            form.reset();
+        });
+           
     
       </script>
 
