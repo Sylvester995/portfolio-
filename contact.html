@@ -76,7 +76,7 @@
 
 
     <section id="form-details">
-        <form action="https://formspree.io/f/xoqgprnj" method="post">
+        <form id="myForm" action="https://formspree.io/f/xoqgprnj" method="post">
             <span class="contact-span">LEAVE A MESSAGE</span>
             <h2>I'd love to hear from you</h2>
             <label for="name">Name: </label>
@@ -95,6 +95,17 @@
             
         </form>
     </section>
+
+
+    <script>
+        // JavaScript to handle form submission and clear fields
+        const form = document.getElementById('myForm');
+    
+        form.addEventListener('submit', function (event) {
+          event.preventDefault(); // Prevent the default form submission
+          form.reset(); // Clear all form fields
+        });
+      </script>
 
    
 
