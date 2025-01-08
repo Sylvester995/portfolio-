@@ -20,6 +20,13 @@
 
 /*Global Styles*/
 
+.intro-txt{
+    color: #1f2227;
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    text-align: left;
+}
+
 #certificates-awards {
   padding: 2rem;
   text-align: center;
@@ -236,7 +243,7 @@ h1 {
 #contact-details{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   #contact-details .details{
@@ -272,17 +279,17 @@ h1 {
   }
   
   #contact-details .details li p{
-    margin: 0;
+    margin-left: 3px;
     font-size: 14px;
   }
   
   #contact-details .map{
-    width: 55%;
+    width: auto;
     height: 400px;
   }
   
   #contact-details .map iframe{
-    width: 100%;
+    width: auto;
     height: 100%;
   }
   
@@ -324,13 +331,13 @@ h1 {
   /* Button style */
 
   .bn632-hover {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 900;
     color: #fff;
     cursor: pointer;
-    margin: 20px 0px;
+    margin: 15px 0px;
     height: 55px;
-    width: 50%;
+    width: auto;
     min-width: 35%;
     text-align:center;
     border: none;
@@ -350,9 +357,7 @@ h1 {
     transition: all .4s ease-in-out;
    
   }
-  .sub-btn{
-    font-size: 10px;
-  }
+  
   
   .bn632-hover:focus {
     outline: none;
